@@ -10,6 +10,9 @@ ok:
 docker buildx build --platform linux/amd64 . --progress plain
 ```
 
+Docker image used as builder described there https://github.com/iav/rust-musl-builder
+
+builder machine docker info:
 ```
 ~/test4$ docker info
 Client:
