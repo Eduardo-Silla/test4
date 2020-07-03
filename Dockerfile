@@ -4,8 +4,5 @@ FROM shtripok/rust-musl-builder:arm
 WORKDIR /app
 COPY * ./
 COPY src/ ./src/
-
-RUN pwd
-run ls -la
-
+RUN env|sort
 RUN cargo build
